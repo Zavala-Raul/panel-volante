@@ -13,7 +13,7 @@ export default function TelemetriaDashboard() {
 
   useEffect(() => {
     // Enlace directo al broker público para el PoC
-    const brokerUrl = 'ws://broker.hivemq.com:8000/mqtt';
+    const brokerUrl = 'ws://broker.hivemq.com:8884/mqtt';
     const topico = 'x7f9a/telemetria/volante/8f2c9b4e-1a3d-4c8f-9e2b-7d6a5c4b3a21'; 
     
     const client = mqtt.connect(brokerUrl);
